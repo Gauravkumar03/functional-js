@@ -1,14 +1,29 @@
 /* -------------------  MOBILE  --------------------- */
+* {
+  padding: 0px;
+}
 
 body {
   display: flex;
   flex-direction: column;
   font-family: Arial;
   min-height: 100vh;
+  text-align: center;
 }
 
-header {
-  /* header styles */
+ul {
+  list-style-type: none;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
 }
 
 main {
@@ -20,9 +35,14 @@ footer {
   /* footer styles */
 }
 
+
 /* -------------------  TABLET  --------------------- */
 @media (min-width: 768px) {
   /* use mobile */
+  ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 /* -------------------  DESKTOP  -------------------- */
